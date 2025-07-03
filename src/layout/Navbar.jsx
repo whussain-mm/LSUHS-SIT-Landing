@@ -80,15 +80,17 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
+      <div className="container">
       <Logo />
       <nav className="navbar-navigation">
         {navigationLinks}
         <div className="navbar-actions">
-          <Button type="default" className="login-btn">
+          <Button color="primary" variant="outlined" size="small">
             Login
           </Button>
         </div>
       </nav>
+      </div>
     </header>
   );
 };

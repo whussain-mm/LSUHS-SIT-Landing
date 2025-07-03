@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/lsu-logo.svg";
 
 
 const Logo = () => (
@@ -9,7 +9,7 @@ const Logo = () => (
           src={logo}
           alt="Company Logo"
           className="logo-image"
-          style={{ height: 40 }}
+          style={{ height: 32, width: 'auto' }}
         />
       </Link>
     </div>
