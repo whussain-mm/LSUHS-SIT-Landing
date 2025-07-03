@@ -24,6 +24,8 @@ import { useNavigate } from 'react-router-dom';
 import StepsSection from '@/pages/Dashboard/components/StepsSection/StepsSection';
 import HeroSection from '@/pages/Dashboard/components/HeroSection/HeroSection';
 import GridSection from '@/pages/Dashboard/components/GridSection/GridSection';
+import EventsSection from './components/EventsSection/Events.page';
+import ActivateSection from './components/ActivateSection/Activate.page';
 
 const { Title, Text } = Typography;
 const { RangePicker } = DatePicker;
@@ -52,15 +54,13 @@ const Dashboard = () => {
   const navigate = useNavigate();
   
   return (
-    <div>
+    <>
       <HeroSection/>
-      <div id="how-it-works-section">
-          <StepsSection />
-      </div>
-      <div id='testing-location-section'>
-        <GridSection/>
-      </div>
-    </div>
+      <StepsSection />
+      <GridSection/>
+      <EventsSection/>
+      <ActivateSection/>
+    </>
   );
 };
 

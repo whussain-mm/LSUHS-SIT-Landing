@@ -3,6 +3,7 @@ import './StepsSection.css';
 import boxStep from "../../../../../src/assets/icons/box-step.svg"
 import docStep from "../../../../../src/assets/icons/doc-step.svg"
 import searchStep from "../../../../../src/assets/icons/search-step.svg"
+import { Col, Row } from 'antd';
 
 const steps = [
   {
@@ -27,20 +28,23 @@ const steps = [
 
 const StepsSection = () => {
   return (
-    <section className="steps-section">
+    <section className="steps-section"  id="how-it-works-section">
       <div className="container">
       <h4 className="steps-subtitle">How it works</h4>
       <h2 className="steps-title">Simple steps to get tested</h2>
 
-      <div className="steps-cards">
+      
+        <Row gutter={40} justify="center" align="top">
         {steps.map((step, index) => (
-          <div className="step-card" key={index}>
+          <Col span={24} md={8} key={index}>
+          <div className="step-card">
             <div className="icon-wrapper"> <img src={step.icon} alt="Step Icon" /></div>
             <h3 className="step-title">{step.title}</h3>
             <p className="step-desc">{step.description}</p>
           </div>
+          </Col>
         ))}
-      </div>
+        </Row>
       </div>
     </section>
   );

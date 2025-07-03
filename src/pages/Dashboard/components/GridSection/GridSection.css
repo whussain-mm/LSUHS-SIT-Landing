@@ -1,61 +1,95 @@
-.grid-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 482px 482px;
-    height: 964px;
-    gap: 0;
-  }
-  
-  .grid-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .grid-box img {
-    width: 100%;
+
+ .purple-box{
+  width: 100%;
+  position: relative;
+  height: 482px;
+ }
+ .purple-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
     height: 100%;
-    object-fit: cover;
-  }
-  
-  /* Purple box */
-  .box-purple {
     background-color: #461D7C;
-    color: #fff;
-    text-align: left;
+    opacity: 1;
   }
   
-  /* Yellow box */
-  .box-yellow {
-    background-color: #fbd437;
-    color: #111;
-    text-align: left;
-  }
-  .box-color-wrapper{
-    padding: 0 84px;
-  }
   
   /* Text styling */
-  .label-yellow {
+  .grid-purple-box{
+    padding-right: 120px;
+  }
+.grid-purple-box .label-yellow {
     font-size: 12px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 16px;
     color: #FDD023;
+    letter-spacing: 0.6px;
+    display: block;
+    margin-bottom: 16px;
+  }
+.grid-purple-box .title {
+    margin-bottom: 16px;
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 58px;
+    margin-top: 0px;
+  }
+.grid-purple-box .desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;color: #fff;
+  }
+  
+
+   .yellow-box{
+  width: 100%;
+  position: relative;
+  height: 482px;
+ }
+ .yellow-box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #FDD023;
+    opacity: 1;
+  }
+  
+  
+ 
+  /* Text styling */
+  .grid-yellow-box{
+    padding-left: 120px;
+  }
+.grid-yellow-box .label-purple {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 16px;
+    color: #461D7C;
+    letter-spacing: 0.6px;
+    display: block;
+    margin-bottom: 16px;
+  }
+.grid-yellow-box .title {
+    margin-bottom: 16px;
+    font-size: 48px;
+    color: #090909;
+    font-weight: 700;
+    line-height: 58px;
+    margin-top: 0px;
+  }
+.grid-yellow-box .desc {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 20px;color: #090909;
   }
 
-  .label-purple {
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #461D7C;
-  }
-  
-  .title {
-    margin-bottom: 10px;
-  }
-  
-  .desc {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  

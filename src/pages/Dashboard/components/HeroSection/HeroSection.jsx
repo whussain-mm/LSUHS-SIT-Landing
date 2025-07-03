@@ -6,7 +6,7 @@ import heroImg from "../../../../assets/images/image2.png";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
+    <section className="hero-section" >
       <div className="container">
         {/* Background image */}
         <div className="hero-bg">
