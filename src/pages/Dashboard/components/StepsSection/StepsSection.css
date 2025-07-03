@@ -1,21 +1,26 @@
 .steps-section {
     text-align: center;
-    padding: 60px 20px;
+    padding: 160px 0px;
   }
   
   .steps-subtitle {
     color: #7a5af8;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    letter-spacing: 0.6px;
+    margin-top: 0px;
   }
   
   .steps-title {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
-    color: #111;
-    margin-bottom: 40px;
+    color: #090909;
+    margin-bottom: 80px;
+    line-height: 58px;
+    margin-top: 0px;
   }
   
   .steps-cards {

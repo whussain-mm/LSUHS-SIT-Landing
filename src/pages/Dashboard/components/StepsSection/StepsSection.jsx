@@ -28,6 +28,7 @@ const steps = [
 const StepsSection = () => {
   return (
     <section className="steps-section">
+      <div className="container">
       <h4 className="steps-subtitle">How it works</h4>
       <h2 className="steps-title">Simple steps to get tested</h2>
 
@@ -39,6 +40,7 @@ const StepsSection = () => {
             <p className="step-desc">{step.description}</p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );
