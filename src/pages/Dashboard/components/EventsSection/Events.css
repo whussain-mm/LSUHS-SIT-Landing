@@ -31,7 +31,9 @@
     color: #090909;
     max-width: 260px;
 }
-
+.event-card{
+    margin-bottom: 60px;
+}
 .event-card .ant-card-cover{
     height: 200px;
     object-fit: cover;

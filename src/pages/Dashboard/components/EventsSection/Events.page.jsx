@@ -97,6 +97,9 @@ const EventsSection = () => {
                 </Card>
             </Col>
         </Row>
+        <div className="d-flex align-items-center justify-content-center">
+            <Button color="primary" variant="solid">View More Event</Button>
+        </div>
       </div>
     </section>
     </>
